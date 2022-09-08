@@ -1,0 +1,24 @@
+html, body {
+    background-color: #21232a;
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.3rem;
+    padding: 70px;
+}
+
+.btn-1, .btn-2, .btn-3 {
+    padding: 0.6rem;
+    border-radius: 0.5rem;
+    font-weight: bold;
+    font-size: 1.1rem;
+    margin-right: 0.6rem;
+}
+.btn-1 {
+    color: rgb(43, 190, 43);
+}
+.btn-2 {
+    color: red;
+}
+.btn-3 {
+    color: rgb(108, 101, 101);
+}
