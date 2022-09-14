@@ -12,13 +12,24 @@ describe("08-imp-exp", () => {
   });
 
   test("getHeroesByOwner", () => {
-    const owner = "DC";
-    const data = [
+    const dc = "DC";
+    const marvel = "Marvel";
+    const data_dc = [
       { id: 1, name: "Batman", owner: "DC" },
       { id: 3, name: "Superman", owner: "DC" },
       { id: 4, name: "Flash", owner: "DC" },
     ];
-    const getOwners = getHeroesByOwner(owner);
-    expect(getOwners).toEqual(data);
+    const data_marvel = [
+      { id: 2, name: "Spiderman", owner: "Marvel" },
+      { id: 5, name: "Wolverine", owner: "Marvel" },
+    ];
+    const getDC = getHeroesByOwner(dc);
+    const getMarvel = getHeroesByOwner(marvel);
+
+    expect(getDC).toEqual(data_dc);
+    expect(data_dc.length).toBe(3);
+
+    expect(getMarvel).toEqual(data_marvel);
+    expect(data_marvel.length).toBe(2);
   });
 });
