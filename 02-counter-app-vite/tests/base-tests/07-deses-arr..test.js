@@ -1,4 +1,3 @@
-import { useState } from "react";
 import { retornaArreglo, usState } from "../../src/base-tests/07-deses-arr";
 
 describe("07-deses-arr", () => {
