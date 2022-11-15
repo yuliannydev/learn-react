@@ -33,7 +33,7 @@ const UseState = (nombre) => {
   return [
     nombre,
     () => {
-      console.log(`Hello world!`);
+      console.log(`Hello world!, ${nombre}`);
     },
   ];
 };

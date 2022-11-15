@@ -18,5 +18,5 @@ FirstApp.propTypes = {
 FirstApp.defaultProps = {
   name: 'Nathalie Rivas',
   title: 'Hola poshito',
-  subTitle: 'Desde tu mente :3'
+  subTitle: 'Desde las defaultProps'
 }
