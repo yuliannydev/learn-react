@@ -4,7 +4,7 @@ import { ListGif } from './components/ListGif';
 
 export const GifExpertApp = () => {
 
-    const [categories, setCategories] = useState(['hunter x hunter']);
+    const [categories, setCategories] = useState([]);
 
     const onAddCategory = (newCategory) => {
       if (categories.includes(newCategory)) {
