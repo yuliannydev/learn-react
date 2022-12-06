@@ -1,5 +1,5 @@
 import React from 'react'
-import { useFetchGifs} from '../hooks/useFetchGifs'
+import { useFetchGifs } from '../hooks/useFetchGifs'
 import { GifItem } from './GifItem'
 
 export const ListGif = ({category}) => {

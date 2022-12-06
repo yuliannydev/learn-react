@@ -1,6 +1,5 @@
 import { useState } from 'react';
-import { AddCategory } from './components/AddCategory';
-import { ListGif } from './components/ListGif';
+import { AddCategory, ListGif } from './components'
 
 export const GifExpertApp = () => {
 
