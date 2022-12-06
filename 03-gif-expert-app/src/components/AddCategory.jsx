@@ -16,7 +16,7 @@ export const AddCategory = ({onNewCategory}) => {
     }
 
       return (
-        <form onSubmit={onSubmit}>
+        <form onSubmit={onSubmit} className='search'>
             <input 
             type="text"
             placeholder='Search new category'
@@ -28,7 +28,7 @@ export const AddCategory = ({onNewCategory}) => {
             type='button'
             onClick={onSubmit}
             >
-                ADD
+            Go
             </button>
         </form> 
       )
