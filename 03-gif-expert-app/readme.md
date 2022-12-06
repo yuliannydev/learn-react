@@ -1,6 +1,8 @@
 ## Topics aprendidos
 
-- Comunicación entre componentes
+- Comunicación entre componentes (props)
+- PropTypes
+- Exportaciones por nombres y por defecto
 - Realizar peticiones a API con un custom hook
   - Funciones:
     - Cargar informacion
@@ -11,4 +13,6 @@
 - Enviar métodos como argumentos
 - Crear listados
 - Hook:
-  - UseEffect
+  - useEffect
+  - useState
+- React Developer tools
