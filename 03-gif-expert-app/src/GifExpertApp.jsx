@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { AddCategory, ListGif } from './components'
+import { AddCategory, ListGif, Footer } from './components'
 
 export const GifExpertApp = () => {
 
@@ -15,7 +15,7 @@ export const GifExpertApp = () => {
   return (
     <>
         {/** Title */}
-        <h1>GifExpertApp</h1>
+        <h1>Search Gif App</h1>
         
         {/** Input */}
         <AddCategory onNewCategory={(value) => onAddCategory(value)} />
@@ -25,5 +25,6 @@ export const GifExpertApp = () => {
           <ListGif key={category} category={category} />
           ))
         }
+        <Footer />
   </>)
 }
