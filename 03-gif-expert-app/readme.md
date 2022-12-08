@@ -17,3 +17,7 @@
   - useState
 - React Developer tools
 - Pruebas con JEST y React Testing Library
+  - Esperar cambios en un customHook
+  - Simular eventos en inputs y formularios
+  - Simular llamadas a funciones
+  - Evaluar si existen elementos en el componente
