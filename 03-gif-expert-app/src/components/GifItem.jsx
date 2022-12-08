@@ -7,4 +7,4 @@ export const GifItem = ({title, image_url }) => {
       <p>{title}</p>
     </section>
   )
-}
+} 

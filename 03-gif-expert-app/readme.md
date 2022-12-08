@@ -16,3 +16,4 @@
   - useEffect
   - useState
 - React Developer tools
+- Pruebas con JEST y React Testing Library
