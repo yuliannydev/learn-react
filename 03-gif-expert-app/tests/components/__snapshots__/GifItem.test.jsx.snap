@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`GifItem Snapshot Title and image_url required 1`] = `
+<div>
+  <section
+    class="card"
+  >
+    <img
+      alt="Hunter X Hunter"
+      src="https://hunter-x-hunter.com/h-x-h.webp"
+    />
+    <p>
+      Hunter X Hunter
+    </p>
+  </section>
+</div>
+`;
