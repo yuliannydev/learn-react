@@ -9,7 +9,6 @@ export const AddCategory = ({onNewCategory}) => {
     }
     
     const onSubmit = (event) => {
-        console.log('Hola desde onSubmit');
         event.preventDefault();
         const value = inputValue.trim();
         if (value.length <= 1) return;
