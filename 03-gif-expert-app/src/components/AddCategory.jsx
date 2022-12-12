@@ -1,18 +1,20 @@
 import React, { useState } from 'react'
+import PropTypes from 'prop-types'
 
-export const AddCategory = ({onNewCategory}) => {
-    const [topic, setTopic] = useState('');
+export const AddCategory = ({onNewCategory}) => { 
+    const [inputValue, setInputValue] = useState('');
     
     const onInput = (event) => {
-        setTopic(event.target.value);
+        setInputValue(event.target.value);
     }
     
     const onSubmit = (event) => {
         event.preventDefault();
-        if (topic.trim().length <= 1) return;
+        const value = inputValue.trim();
+        if (value.length <= 1) return;
         
-        onNewCategory(topic.trim())
-        setTopic('');
+        onNewCategory(value);
+        setInputValue('');
     }
 
       return (
@@ -20,7 +22,7 @@ export const AddCategory = ({onNewCategory}) => {
             <input 
             type="text"
             placeholder='Search new gif category and push enter or botton GO'
-            value={topic}
+            value={inputValue}
             onChange={onInput}
             />
 
@@ -28,8 +30,12 @@ export const AddCategory = ({onNewCategory}) => {
             type='button'
             onClick={onSubmit}
             >
-            Go
+            GO
             </button>
         </form> 
       )
+}
+
+AddCategory.propTypes = {
+    onNewCategory: PropTypes.func.isRequired
 }
