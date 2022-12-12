@@ -22,12 +22,16 @@ describe('<AddCategory />', () => {
          */
         expect(input.value).toBe('Hunter X Hunter');
      })
-
-     /*
+     
     test('Must change when recibe a click', () => { 
-        render( <AddCategory onNewCategory={()=>{}}/> )
+
+        render( <AddCategory onNewCategory={ ()=>{} } /> )
+
+        const input = screen.getByRole('textbox');
         const btn = screen.getByRole('button');
 
-        fireEvent.click(btn)
-     }) */
+        fireEvent.input( input, { target: { value: 'Hunter X Hunter' }} );
+        fireEvent.submit(btn)
+
+     })
  })
