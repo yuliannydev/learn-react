@@ -23,7 +23,7 @@ describe('<AddCategory />', () => {
         expect(input.value).toBe('Hunter X Hunter');
      })
      
-    test('Must change when recibe a click', () => { 
+    test('The function onNewCategory must be executed when the button is clicked', () => { 
 
         render( <AddCategory onNewCategory={ ()=>{} } /> )
 
@@ -33,5 +33,9 @@ describe('<AddCategory />', () => {
         fireEvent.input( input, { target: { value: 'Hunter X Hunter' }} );
         fireEvent.submit(btn)
 
+        /** Al finalizar el evento textbox debe quedar vacio */
+        expect(input.value).toBe('');
+
+        // expect()
      })
  })
